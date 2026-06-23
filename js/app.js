@@ -1,4 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // 0. SET HERO BANNER BACKGROUND IMAGE BASED ON CURRENT PAGE
+    const heroBanner = document.querySelector(".hero-banner");
+    const getPageKey = () => {
+        const page = window.location.pathname.split("/").pop().toLowerCase();
+        switch (page) {
+            case "index.html":
+            case "":
+                return "home";
+            case "tv-shows.html":
+                return "tvShows";
+            case "movies.html":
+                return "movies";
+            case "games.html":
+                return "games";
+            case "new-popular.html":
+                return "newPopular";
+            case "my-list.html":
+                return "myList";
+            default:
+                return "home";
+        }
+    };
+
+    const currentPage = getPageKey();
+    if (heroBanner && window.pageHeroImages) {
+        const heroImage = window.pageHeroImages[currentPage] || window.pageHeroImages.home;
+        heroBanner.style.backgroundImage = `url('${heroImage}')`;
+    }
+
     // 1. SCROLL EFFECT ON NAVBAR
     const navbar = document.getElementById("main-nav");
     window.addEventListener("scroll", () => {
@@ -22,7 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("carousel-container");
     if (!container) return;
 
-    movieCategories.forEach((category) => {
+    const categories = window.pageCategories?.[currentPage] || movieCategories;
+
+    categories.forEach((category) => {
         const row = document.createElement("div");
         row.className = "movie-row";
 
