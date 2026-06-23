@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="main-nav">
+        <div class="nav-left">
+            <img class="nav-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+            <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation">
+                Browse <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <i class="fas fa-search nav-icon"></i>
+            <span class="nav-text">Children</span>
+            <i class="fas fa-bell nav-icon"></i>
+            <img class="nav-avatar" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="User Profile Avatar">
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Our Generation</h1>
+            <p class="hero-description">
+                Set in the early '90s, a bubbly girl and a gloomy boy form a bond. Can their friendship survive the struggle of growing up and bloom into something more?
+            </p>
+            <div class="hero-buttons">
+                <button class="hero-btn btn-play"><i class="fas fa-play"></i> Play</button>
+                <button class="hero-btn btn-info"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+        </div>
+        <div class="hero-bottom-fade"></div>
+    </header>
+
+    <main id="carousel-container" class="carousel-rows-container"></main>
+
+    <footer class="main-footer">
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="footer-links-grid">
+            <a href="#">Audio Description</a>
+            <a href="#">Help Center</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Media Center</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Jobs</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p class="footer-copyright">&copy; 1997-2026 Netflix, Inc.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
