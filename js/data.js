@@ -30,6 +30,16 @@ const pageCategories = {
             ]
         },
         {
+            title: "Action Movies",
+            images: [
+                "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80",
+                "https://images.unsplash.com/photo-1492446845049-9c50cc313f00?w=400&q=80",
+                "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=400&q=80",
+                "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80",
+                "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&q=80"
+            ]
+        },
+        {
             title: "Popular on Netflix",
             images: [
                 "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=400&q=80",
@@ -37,6 +47,26 @@ const pageCategories = {
                 "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=80",
                 "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&q=80",
                 "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+            ]
+        },
+        {
+            title: "Comedy Movies",
+            images: [
+                "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=400&q=80",
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&q=80",
+                "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=400&q=80",
+                "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=400&q=80",
+                "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80"
+            ]
+        },
+        {
+            title: "New Releases",
+            images: [
+                "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=400&q=80",
+                "https://images.unsplash.com/photo-1512427691650-2f9c79dfdc7c?w=400&q=80",
+                "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=80",
+                "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=400&q=80",
+                "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80"
             ]
         }
     ],
