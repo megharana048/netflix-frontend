@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const currentPage = getPageKey();
-    if (heroBanner && window.pageHeroImages) {
-        const heroImage = window.pageHeroImages[currentPage] || window.pageHeroImages.home;
+    const heroImages = window.pageHeroImages || pageHeroImages;
+    if (heroBanner && heroImages) {
+        const heroImage = heroImages[currentPage] || heroImages.home;
         heroBanner.style.backgroundImage = `url('${heroImage}')`;
     }
 
